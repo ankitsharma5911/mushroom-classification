@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Data%20Science/projects/mushroom/mlruns/0/60f8ac69ab0c4bd6b9932698304dfbdf/artifacts
+end_time: 1737460777923
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 60f8ac69ab0c4bd6b9932698304dfbdf
+run_name: agreeable-loon-680
+run_uuid: 60f8ac69ab0c4bd6b9932698304dfbdf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737460758771
+status: 4
+tags: []
+user_id: ankitsharma5911
