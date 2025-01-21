@@ -27,7 +27,7 @@ os.environ["MLFLOW_TRACKING_USERNAME"] = "ankitsharma5911"
 os.environ["MLFLOW_TRACKING_PASSWORD"] = "bead5509178453e6df868b3bf7f29e108a09e028"
 
 
-dagshub.init(repo_owner='ankitsharma5911', repo_name='MushroomClassification', mlflow=True)
+dagshub.init(repo_owner='ankitsharma5911', repo_name='mushroom-classification', mlflow=True)
 
 @dataclass
 class ModelTrainerConfig:
@@ -49,6 +49,7 @@ class ModelTrainer:
     def register_model(self,model,X_train,y_train,modelperformance:ModelPerformance):
         try:
             mlflow.set_registry_uri(MLFLOW_TRACKING_URI)
+            # mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
             tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
 
             mlflow.set_experiment("MushroomClassification")
@@ -66,12 +67,11 @@ class ModelTrainer:
                                     sk_model=model,
                                     artifact_path="model",
                                     signature=signature,
-                                    registered_model_name="register model")
+                                    registered_model_name="best model")
             
                 if tracking_url_type_store != "file":
-                    mlflow.sklearn.log_model(model, "model",registered_model_name="best model")
-                else:
                     mlflow.sklearn.log_model(model, "model")
+                
                     
         except Exception as e:
             logging.error(f"An error occurred in registering model: {e}")
