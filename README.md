@@ -74,9 +74,18 @@ The objective of this project is to classify mushrooms as edible or poisonous us
    - Example input:
      ```json
      {
-         "cap-shape": "x",
-         "cap-surface": "s",
-         "odor": "n"
+         "cap_shape": "x",
+         "cap_surface": "s",
+         "cap_color": "n",
+         "bruises": "t",
+         "odor": "n",
+         "gill_attachment": "f",
+         "gill_spacing": "c",
+         "gill_size": "n",
+         "gill_color": "n",
+         "stalk_shape": "e",
+         "stalk_root": "c",
+         "stalk_surface_above_ring": "s",
      }
      ```
    - Example output:
