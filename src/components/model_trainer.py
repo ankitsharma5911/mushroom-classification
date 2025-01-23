@@ -31,7 +31,7 @@ dagshub.init(repo_owner='ankitsharma5911', repo_name='mushroom-classification', 
 
 @dataclass
 class ModelTrainerConfig:
-    trained_model_file_path = os.path.join('artifacts','model.pkl')
+    trained_model_file_path = os.path.join('artifacts','model_trainer','model.pkl')
 
 @dataclass 
 class ModelPerformance:
