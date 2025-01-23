@@ -97,7 +97,7 @@ The objective of this project is to classify mushrooms as edible or poisonous us
      ```
 
 2. **Deployed API**:
-   - Access the live API at `[a link](https://mushroom-classification-jaxa.onrender.com/)`.
+   - Access the live API at `https://mushroom-classification-jaxa.onrender.com`.
 
 ---
 
