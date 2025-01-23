@@ -15,6 +15,7 @@ This project focuses on building a machine learning model to classify mushrooms 
   - [Usage](#usage)
   - [API Endpoints](#api-endpoints)
   - [Testing](#testing)
+  - [Docker Support](#docker-support)
   - [Contributing](#contributing)
   - [License](#license)
 
@@ -126,6 +127,24 @@ The objective of this project is to classify mushrooms as edible or poisonous us
 
 ---
 
+## Docker Support
+
+To simplify deployment, this project uses a prebuilt Docker image available at `ankitsharma80/mushroom_classification`.
+
+1. Pull the Docker image:
+   ```bash
+   docker pull ankitsharma80/mushroom_classification
+   ```
+
+2. Run the container:
+   ```bash
+   docker run -p 5000:5000 ankitsharma80/mushroom_classification
+   ```
+
+3. Access the application at `http://127.0.0.1:5000/`.
+
+---
+
 ## Contributing
 
 Contributions are welcome! To contribute:
@@ -141,4 +160,3 @@ Contributions are welcome! To contribute:
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 
-*
