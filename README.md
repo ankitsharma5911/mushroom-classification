@@ -64,7 +64,7 @@ The objective of this project is to classify mushrooms as edible or poisonous us
    ```bash
    python app.py
    ```
-4. Access the application at `http://127.0.0.1:5000/`.
+4. Access the application at [http://127.0.0.1:5000/](http://127.0.0.1:5000/).
 
 ---
 
@@ -97,7 +97,7 @@ The objective of this project is to classify mushrooms as edible or poisonous us
      ```
 
 2. **Deployed API**:
-   - Access the live API at ![this link](https://mushroom-classification-jaxa.onrender.com) .
+   - Access the live API at [this link](https://mushroom-classification-jaxa.onrender.com) .
 
 ---
 
